@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./assets/quiz-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz App</title>
+</head>
+<body>
+
+    <div class="rules-container">
+
+        <div class="rules-heading">
+
+            <h2>Rules of the Quiz</h2>
+
+        </div>
+
+        <div class="rules">
+            
+            <p>1. You have <span>15 sec</span> to complete each question.</p>
+            <p>2. Once you select an answer, you <span>cannot change</span> it.</p>
+            <p>3. You can't select any option once <span>time is over.</span></p>
+            <p>4. Leaving the quiz before completion will result in <span>losing your answers</span> and <span>score.</span></p>
+            <p>5. You'll get <span>points</span> on the basis of your correct answers.</p>
+
+        </div>
+
+        <button class="start-quiz-btn">Start Quiz</button>
+
+    </div>
+
+    <div class="quiz-container">
+
+        <div class="header">
+
+            <div class="title">
+
+                <h2>Coding Quiz</h2>
+                <img src="./assets/title-icon.png">
+                
+            </div>
+
+            <div class="timer-div">
+
+                <i class="fa-solid fa-stopwatch"></i>
+                <div class="countdown-time">
+                    <p>15s</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="question">
+                <p></p>
+            </div>
+            
+            <div class="answer-options">
+                
+                <!-- Dynamically created in JavaScript  -->
+                 
+                <!-- <button class="option" id="option-1">
+                    JavaScript
+                </button>
+                <button class="option" id="option-2">
+                    HTML
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </button>
+                <button class="option" id="option-3">
+                    CSS
+                    <i class="fa-regular fa-circle-check"></i>
+                </button>
+                <button class="option" id="option-4">
+                    Python
+                </button> -->
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="outoff-questions">
+                
+                <p></p>
+
+            </div>
+
+            <div class="next-qs-btn">
+
+                <button>
+                    Next <i class="fa-solid fa-angle-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="result">
+
+        <img class="result-img" src="./assets/result-img.png">
+
+        <div class="result-details">
+
+            <p class="message"><span>Woo-Hoo! 🎉</span><br>You've Completed the Quiz and scored <span>7</span> out of <span>10</span></p>
+            
+            <p class="message-feedback">Great job! Keep up the good work.</p>
+
+            <button class="retake-btn">Retake the Quiz</button>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
